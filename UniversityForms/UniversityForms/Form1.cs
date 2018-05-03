@@ -16,5 +16,13 @@ namespace UniversityForms
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Text = "University";
+            Height = 600;
+            Width = 600;
+            StartPosition = FormStartPosition.CenterScreen;
+        }
     }
 }

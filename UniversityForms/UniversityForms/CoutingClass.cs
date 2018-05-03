@@ -8,15 +8,15 @@ namespace UniversityForms
 {
     public class CoutingClass
     {
-        public int Mean(string a, string b, string c, string d, string f)
+        public double Mean(string a, string b, string c, string d, string f)
         {
-            int x1 = Convert.ToInt32(a);
-            int x2 = Convert.ToInt32(b);
-            int x3 = Convert.ToInt32(c);
-            int x4 = Convert.ToInt32(d);
-            int x5 = Convert.ToInt32(f);
+            double x1 = Convert.ToDouble(a);
+            double x2 = Convert.ToDouble(b);
+            double x3 = Convert.ToDouble(c);
+            double x4 = Convert.ToDouble(d);
+            double x5 = Convert.ToDouble(f);
 
-            int _mean = (x1+x2+x3+x4+x5)/5;
+            double _mean = (x1+x2+x3+x4+x5)/5;
             return _mean;
         }
     }

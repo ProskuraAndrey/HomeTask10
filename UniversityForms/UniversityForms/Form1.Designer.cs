@@ -46,6 +46,8 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.Marks = new System.Windows.Forms.Label();
             this.Result = new System.Windows.Forms.Label();
+            this.calc_button = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -170,6 +172,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(39, 21);
             this.comboBox1.TabIndex = 11;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox2
             // 
@@ -184,6 +187,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(39, 21);
             this.comboBox2.TabIndex = 12;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // comboBox3
             // 
@@ -198,6 +202,7 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(39, 21);
             this.comboBox3.TabIndex = 13;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // comboBox4
             // 
@@ -212,6 +217,7 @@
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(39, 21);
             this.comboBox4.TabIndex = 14;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // comboBox5
             // 
@@ -226,6 +232,7 @@
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(39, 21);
             this.comboBox5.TabIndex = 15;
+            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
             // 
             // Marks
             // 
@@ -239,17 +246,41 @@
             // Result
             // 
             this.Result.AutoSize = true;
-            this.Result.Location = new System.Drawing.Point(84, 366);
+            this.Result.Location = new System.Drawing.Point(81, 367);
             this.Result.Name = "Result";
             this.Result.Size = new System.Drawing.Size(232, 13);
             this.Result.TabIndex = 17;
             this.Result.Text = "Average performance for the group is equal to =";
+            // 
+            // calc_button
+            // 
+            this.calc_button.Location = new System.Drawing.Point(84, 330);
+            this.calc_button.Name = "calc_button";
+            this.calc_button.Size = new System.Drawing.Size(207, 23);
+            this.calc_button.TabIndex = 18;
+            this.calc_button.Text = "Сalculation";
+            this.calc_button.UseVisualStyleBackColor = true;
+            this.calc_button.Click += new System.EventHandler(this.calc_button_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label4.Location = new System.Drawing.Point(366, 366);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 15);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "______";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(572, 480);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.calc_button);
             this.Controls.Add(this.Result);
             this.Controls.Add(this.Marks);
             this.Controls.Add(this.comboBox5);
@@ -296,6 +327,8 @@
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Label Marks;
         private System.Windows.Forms.Label Result;
+        private System.Windows.Forms.Button calc_button;
+        private System.Windows.Forms.Label label4;
     }
 }
 

@@ -48,6 +48,9 @@
             this.Result = new System.Windows.Forms.Label();
             this.calc_button = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -92,6 +95,7 @@
             this.Department.Name = "Department";
             this.Department.Size = new System.Drawing.Size(101, 21);
             this.Department.TabIndex = 3;
+            this.Department.SelectedIndexChanged += new System.EventHandler(this.Department_SelectedIndexChanged);
             // 
             // TeacherFIO
             // 
@@ -153,11 +157,12 @@
             // stud5
             // 
             this.stud5.AutoSize = true;
-            this.stud5.Location = new System.Drawing.Point(116, 277);
+            this.stud5.Location = new System.Drawing.Point(91, 277);
             this.stud5.Name = "stud5";
-            this.stud5.Size = new System.Drawing.Size(69, 13);
+            this.stud5.Size = new System.Drawing.Size(94, 13);
             this.stud5.TabIndex = 10;
-            this.stud5.Text = "Vova Shatun";
+            this.stud5.Text = "Veranika Sorokina";
+            this.stud5.Click += new System.EventHandler(this.stud5_Click);
             // 
             // comboBox1
             // 
@@ -267,18 +272,49 @@
             this.label4.AutoSize = true;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Location = new System.Drawing.Point(366, 366);
+            this.label4.Location = new System.Drawing.Point(319, 367);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 15);
             this.label4.TabIndex = 19;
             this.label4.Text = "______";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(370, 367);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(63, 13);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "in our group";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(439, 367);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 13);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "___________";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(518, 367);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(41, 13);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "subject";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(572, 480);
+            this.ClientSize = new System.Drawing.Size(622, 480);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.calc_button);
             this.Controls.Add(this.Result);
@@ -329,6 +365,9 @@
         private System.Windows.Forms.Label Result;
         private System.Windows.Forms.Button calc_button;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
 
